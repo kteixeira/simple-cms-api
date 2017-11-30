@@ -18,8 +18,15 @@ function response($data, $code)
 
     if(is_bool($data))
     {
-        echo $data? json_encode(['error' => false, 'message' => 'Successful operation!']):
-            json_encode(['error' => true, 'message' => 'Unsuccessful operation, contact support for more information.']);
+        if(!$data)
+        {
+            http_response_code(400);
+
+            echo json_encode(['message' => 'Bad Request']);
+            die;
+        }
+
+        echo json_encode(['message' => 'Success']);
         die;
     }
 
