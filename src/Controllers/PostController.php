@@ -18,15 +18,15 @@ class PostController
     public function create($post)
     {
         if(!isset($post['title']) || is_null($post['title']))
-            return response(['error' => 'true', 'message' => 'The field Title is required'], 400);
+            return response(['message' => 'The field Title is required'], 400);
 
         if((!isset($post['path']) || is_null($post['path'])))
-            return response(['error' => 'true', 'message' => 'The field Path is required'], 400);
+            return response(['message' => 'The field Path is required'], 400);
 
         try {
             return response(Posts::create($post), 201);
         } catch (\Exception $e) {
-            return response('Bad Request', 400);
+            return response(['message' => 'Bad Request'], 400);
         }
     }
 
@@ -40,7 +40,7 @@ class PostController
         try {
             return response(Posts::update($id, $post), 200);
         } catch (\Exception $e) {
-            return response('Bad Request', 400);
+            return response(['message' => 'Bad Request'], 400);
         }
     }
 
@@ -53,7 +53,7 @@ class PostController
         try {
             return response(Posts::delete($id), 200);
         } catch (\Exception $e) {
-            return response('Bad Request', 400);
+            return response(['message' => 'Bad Request'], 400);
         }
     }
 
@@ -66,7 +66,7 @@ class PostController
         try {
             return response(Posts::find($id), 200);
         } catch (\Exception $e) {
-            return response('Bad Request', 400);
+            return response(['message' => 'Bad Request'], 400);
         }
     }
 
@@ -78,7 +78,7 @@ class PostController
         try {
             return response(Posts::findAll(), 200);
         } catch (\Exception $e) {
-            return response('Bad Request', 400);
+            return response(['message' => 'Bad Request'], 400);
         }
     }
 }
