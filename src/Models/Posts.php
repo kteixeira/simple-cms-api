@@ -1,6 +1,6 @@
 <?php
 
-namespace TestJustCms\Models;
+namespace Simp\Models;
 
 class Posts extends Model
 {

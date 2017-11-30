@@ -6,7 +6,7 @@
  * @author     Kaio Teixeira
  */
 
-namespace TestJustCms\Models;
+namespace SimpleCMSAPI\Models;
 use Configs\Connection;
 
 class Model

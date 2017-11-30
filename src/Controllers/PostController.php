@@ -6,8 +6,8 @@
  * @author     Kaio Teixeira
  */
 
-namespace TestJustCms\Controllers;
-use TestJustCms\Models\Posts;
+namespace SimpleCMSAPI\Controllers;
+use SimpleCMSAPI\Models\Posts;
 
 class PostController
 {

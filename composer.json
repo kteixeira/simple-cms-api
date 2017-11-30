@@ -1,5 +1,5 @@
 {
-  "name": "kteixeira/test-just-cms",
+  "name": "kteixeira/simple-cms-api",
   "description": "Teste em PHP para o processo seletivo na Just Digital",
   "type": "library",
   "license": "MIT",
@@ -19,7 +19,7 @@
   },
   "autoload": {
       "psr-4": {
-        "TestJustCms\\": "src/",
+        "SimpleCMSAPI\\": "src/",
         "Configs\\": "configs/"
       }
   }

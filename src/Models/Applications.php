@@ -1,6 +1,6 @@
 <?php
 
-namespace TestJustCms\Models;
+namespace SimpleCMSAPI\Models;
 
 class Applications extends Model
 {

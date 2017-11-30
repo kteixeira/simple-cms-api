@@ -6,8 +6,8 @@
  * @author     Kaio Teixeira
  */
 
-namespace TestJustCms\Controllers;
-use TestJustCms\Models\Applications;
+namespace SimpleCMSAPI\Controllers;
+use SimpleCMSAPI\Models\Applications;
 
 class ApplicationController
 {

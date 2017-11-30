@@ -10,7 +10,7 @@ function response($data, $code)
 {
     http_response_code($code);
 
-    if($data instanceof \TestJustCms\Models\Posts)
+    if($data instanceof \SimpleCMSAPI\Models\Posts)
     {
         echo json_encode($data->jsonSerialize());
         die;
@@ -23,7 +23,7 @@ function response($data, $code)
         die;
     }
 
-    if(is_array($data) && isset($data[0]) && $data[0] instanceof \TestJustCms\Models\Posts)
+    if(is_array($data) && isset($data[0]) && $data[0] instanceof \SimpleCMSAPI\Models\Posts)
     {
         $response = [];
 

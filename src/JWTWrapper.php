@@ -1,8 +1,8 @@
 <?php
 
-namespace TestJustCms;
+namespace SimpleCMSAPI;
 use \Firebase\JWT\JWT;
-use TestJustCms\Controllers\ApplicationController;
+use SimpleCMSAPI\Controllers\ApplicationController;
 
 /**
  * Gerenciamento de tokens JWT
