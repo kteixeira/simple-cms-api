@@ -1,6 +1,6 @@
 <?php
 
-namespace Simp\Models;
+namespace SimpleCMSAPI\Models;
 
 class Posts extends Model
 {
