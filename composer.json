@@ -22,5 +22,7 @@
         "SimpleCMSAPI\\": "src/",
         "Configs\\": "configs/"
       }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
