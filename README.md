@@ -8,13 +8,23 @@ Uma simples API que simula algumas funcionalidades de um CMS.
 * MySQL
 * Composer
 * Bibliotecas
-  * Bramus-Router (https://github.com/bramus/router)
-  * PHP-JWT (https://github.com/firebase/php-jwt)
-*
+  * [Bramus-Router](https://github.com/bramus/router)
+  * [PHP-JWT](https://github.com/firebase/php-jwt)
+
 
 ## Instalação
 
-- composer require kteixeira/simple-cms-api
+*- composer require kteixeira/simple-cms-api dev-master* (Em breve)
+
+* Composer
+  - Caso não tenha, veja como instalar na [Documentação Oficial](https://getcomposer.org/download/)
+  
+* Instruções
+  - Clone o projeto em seu local
+  - Rode o comando composer install
+  - Em */configs* crie um arquivo chamado **database.php**, há um modelo para se espelhar, chamase **database_example.php**. Preencha com seus dados de conexão ao MySQL.
+  - Dê start em um servidor de testes com o comando: php -S localhost:8080 (ou a porta que preferir).
+  - Faça primeiro a autenticação e em seguida insira o *access_token* recebido, nos headers.
 
 #### Observação
 - O arquivo  ****dump_cms.sql**** encontra-se na raiz do projeto e é um script em SQL para a criação do Schema e das Tabelas, já populando com a aplicação de teste.
