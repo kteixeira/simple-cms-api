@@ -41,8 +41,7 @@ Uma simples API que simula algumas funcionalidades de um CMS.
 * Method
   * POST
   
-* URL Params
-  * Required: [title, path] 
+* URL Params required: [title, path] 
 
 * Body
   * {"post":{"title":"Lorem Ipsum","body":"Lorem Ipsum","path":"\/path\/test"}}
@@ -112,6 +111,8 @@ Uma simples API que simula algumas funcionalidades de um CMS.
 
 * Method
   * POST
+
+* URL Params required: [name, password]
 
 * Body (Já são os dados do usuário cadastrado no banco)
   * {"name": "App Teste","password": "teste1234"}

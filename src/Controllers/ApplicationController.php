@@ -18,6 +18,12 @@ class ApplicationController
      */
     public function auth($data)
     {
+        if(!isset($data['name']) || is_null($data['name']))
+            return response(['message' => 'The field Name is required'], 400);
+
+        if((!isset($data['password']) || is_null($data['password'])))
+            return response(['message' => 'The field Password is required'], 400);
+
         $application = Applications::findByName($data['name']); //busca a application pelo nome
 
         if(!isset($application[0]))
